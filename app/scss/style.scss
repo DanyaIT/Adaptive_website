@@ -1,0 +1,107 @@
+@import "vars";
+@import "global";
+@import "reset";
+
+
+.header {
+  padding: 20px 0 20px;
+  box-shadow: -2px 0px 10px 2px rgba(0, 0, 0, 0.05);
+  &__content {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    &-logo {
+      margin-right: 60px;
+      height: 31px;
+      max-width: 135px;
+      width: 100%;
+      height: 100%;
+    }
+    &-input {
+      max-width: 835px;
+      width: 100%;
+      height: 40px;
+      margin-right: 40px;
+      border-radius: 5px;
+      list-style: none;
+      border: 1px solid #ebebf1;
+      background-image: url(../images/loupe.svg);
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: 13px;
+      padding: 12px 39px 12px;
+      font-size: 14px;
+      line-height: 17px;
+      color: #bbc4d6;
+      
+    }
+  }
+
+  &__user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 80px;
+      background: #ebebf1;
+      transform: translateX(-83px);
+    }
+
+    &-name {
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      display: flex;
+      color: #768298;
+    }
+    &-img {
+      margin-left: 12px;
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+.partners{
+    margin-top: 70px;
+    &__inner{
+        &-title{
+            font-size: 36px;
+            font-weight: 500;
+            line-height: 58px;
+            color: #121920;
+            margin-bottom: 30px;
+        }
+        &-images{
+            display: flex;
+            justify-content: row;
+            flex-wrap: wrap;
+            gap:29px;
+        }
+        &-link{
+          max-width: 288px;
+          max-height: 120px;
+        }
+        &-img{
+          border: solid 1px rgba(82, 80, 80, 0.5);
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          &:hover{
+            cursor: pointer;
+            scale: 1.1;
+            transition: ease-in 0.3s;
+            box-shadow: -2px 0px 10px 2px rgba(0, 0, 0, 1);
+          
+          }
+        }
+    }
+}
+
+
+@import "media";
